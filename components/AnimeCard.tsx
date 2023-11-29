@@ -1,9 +1,19 @@
 import Image from "next/image";
 import {Prop} from '../types/type'
+import {motion} from "framer-motion"
+
+const variants = {
+  hidden: {opacity: 0},
+  visible: {opacity: 1}
+}
 
 function AnimeCard({ anime }: Prop) {
   return (
-    <div className="max-w-sm rounded relative w-full">
+    <motion.div
+      variants={variants}
+      initial="hidden"
+      animate="visible"
+      className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
           src={`https://shikimori.one${anime.image.original}`}
@@ -48,7 +58,7 @@ function AnimeCard({ anime }: Prop) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
