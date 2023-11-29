@@ -2,6 +2,10 @@
 
 This project is a Next.js application initialized with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), leveraging TypeScript and Next.js version 14.0.3. The styling is implemented using Tailwind CSS.
 
+## Live Site
+
+Visit the live site: [Next.js Server Actions Infinite Scroll](https://next-server-actions-fyuksel.vercel.app/)
+
 ## Getting Started
 
 To initiate the development server, run the following commands in your terminal:
