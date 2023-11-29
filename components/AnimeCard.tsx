@@ -7,14 +7,14 @@ const variants = {
   visible: { opacity: 1 },
 };
 
-function AnimeCard({ anime }: Prop) {
+function AnimeCard({ anime, index }: Prop) {
   return (
     <MotionDiv
       variants={variants}
       initial="hidden"
       animate="visible"
       transition={{
-        delay: 1,
+        delay: index * 0.15 ,
         ease: "easeInOut",
         duration: 0.5,
       }}
@@ -26,7 +26,7 @@ function AnimeCard({ anime }: Prop) {
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
-          className="rounded-xl"
+          className="rounded-xl px-16 sm:px-0"
         />
       </div>
       <div className="py-4 flex flex-col gap-3">

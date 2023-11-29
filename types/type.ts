@@ -1,3 +1,4 @@
+
 export interface AnimeProp {
   id: string;
   name: string;
@@ -14,3 +15,5 @@ export interface Prop {
   anime: AnimeProp;
   index: number;
 }
+
+export type AnimeCard = JSX.Element;
