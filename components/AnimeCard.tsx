@@ -1,28 +1,12 @@
 import Image from "next/image";
-
-export interface AnimeProp {
-  id: string;
-  name: string;
-  image: {
-    original: string;
-  };
-  kind: string;
-  episodes: number;
-  episodes_aired: number;
-  score: string;
-}
-
-interface Prop {
-  anime: AnimeProp;
-  index: number;
-}
+import {Prop} from '../types/type'
 
 function AnimeCard({ anime }: Prop) {
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
-          src={anime.image.original}
+          src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
           className="rounded-xl"
