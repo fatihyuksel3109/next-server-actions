@@ -26,6 +26,22 @@ This project utilizes [`next/font`](https://nextjs.org/docs/basic-features/font-
 
 This project is specifically enhanced with an infinite scroll feature. As you scroll through the content, additional data will be dynamically loaded, providing a seamless and uninterrupted user experience.
 
+## Framer Motion and React Intersection Observer
+To further enhance the user interface and interaction, this project integrates Framer Motion and React Intersection Observer packages.
+
+To install the required packages, run the following command:
+
+bash
+Copy code
+npm install framer-motion react-intersection-observer
+# or
+yarn add framer-motion react-intersection-observer
+# or
+pnpm install framer-motion react-intersection-observer
+# or
+bun install framer-motion react-intersection-observer
+These packages provide powerful animation and intersection observer capabilities, allowing for smooth transitions and dynamic content loading.
+
 ## Learn More
 
 To delve deeper into Next.js, explore the following resources:
@@ -34,9 +50,3 @@ To delve deeper into Next.js, explore the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
 
 Feel free to contribute or provide feedback by visiting [the Next.js GitHub repository](https://github.com/vercel/next.js/).
-
-## Deploy on Vercel
-
-For a hassle-free deployment of your Next.js app, consider utilizing the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Refer to our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for comprehensive deployment instructions and details. Your feedback and contributions are highly appreciated!
